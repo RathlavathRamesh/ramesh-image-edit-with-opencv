@@ -157,7 +157,7 @@ def main():
 
     if uploaded_file:
         image = load_image(uploaded_file)
-        st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), caption="Original Image", use_column_width=True)
+        st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), caption="Original Image", use_container_width =True)
 
         section = st.sidebar.radio("Choose Section", ["Basic Processing", "Color and Filtering", "Contours & Morphology"])
 
